@@ -1,0 +1,236 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <title>ارتباط با ما</title>
+
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href={% static "css/style.css" %}>
+	
+    <!-- Theme Color -->
+	<meta name="theme-color" content="#4A00E0">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- header-start -->
+
+    <header>
+        <div class="header-area">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header_wrap d-flex justify-content-between align-items-center">
+                                <div class="header_left">
+                                    <div class="logo">
+                                        <a href={% url "index" %}>
+                                            <h4>shakeri language institute</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header_right d-flex align-items-center">
+                                    <div class="main-menu  d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href={% url "index" %}>خانه <i class="ti-angle-down"></i></a></li>
+                                                <li><a href="#">واحد های مجتمع اموزشی <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href={% url "moasese" %}>موسسه زبان</a></li>
+                                                        <li><a href={% url "mahd" %}>مهد زبان</a></li>
+                                                        <li><a href={% url "pish" %}>پیش دبستانی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href={% url "about" %}>درباره ما</a></li>
+                                                <li><a href={% url "contact" %}>تماس</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><!-- header-end -->
+    <!-- header-end -->
+<!-- Breadcrumb-start -->
+    <section class="breadcrumb breadcrumb_bg bg-overlay-3 bg-img" style="background-image: {% static "img/bg-img/35.jpg" %};">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item text-center">
+                            <h2>تماس</h2>
+                            <div class="custom-breadcrumb">
+                                <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
+                                    <li class="list-inline-item breadcrumb-item"><a href="#">خانه</a></li>
+                                    <li class="list-inline-item breadcrumb-item active">تماس</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb-end -->
+
+    <div class="map-area">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.134323393961!2d50.97030667064604!3d35.87022498877817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23050267683a7803!2zMzXCsDUyJzEyLjgiTiA1MMKwNTgnMDcuMiJF!5e0!3m2!1sfa!2s!4v1658100233822!5m2!1sfa!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Contact Area Start -->
+    <section class="contact-our-area bg-gray section-padding-100-0" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-7">
+                    <div class="section-title t_center">
+                        <h2>تماس با ما</h2>
+                        <p>برای ارتباط با ما میتوانید با شماره های زیر تماس بگیرید<br>
+                        34352905 (026)<br>
+                        34344427 (026)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <!-- Contact Form -->
+                    <div class="contact_from_area clearfix mb-100">
+                        <div class="contact_form">
+                            <form id="main_contact_form">
+                                <div class="contact_input_area">
+                                    <div id="success_fail_info"></div>
+                                    <div class="row">
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="fname" id="name" placeholder="نام *" required>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="lname" id="name-2" placeholder="نام خانوادگی *" required>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="email" class="form-control mb-30" name="email" id="email" placeholder="* ایمیل" dir="ltr" required>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12 col-lg-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="موضوع">
+                                            </div>
+                                        </div>
+                                        <!-- Form Group -->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <textarea class="form-text-area mb-30" name="message" id="message" cols="30" rows="6" placeholder="پیام شما *" required></textarea>
+                                            </div>
+                                        </div>
+                                        <!-- Button -->
+                                        <div class="col-12 text-center">
+                                            <button type="submit" class="btn sosa-btn">ارسال پیام</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area End -->
+
+    <!-- Footer Contact Area -->
+
+    <!-- Footer Contact Area -->
+    <div class="footer-contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Footer Widget -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-single-widget mb-50">
+                        <div class="footer-logo">
+                            <h4>shakeri language institute</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Widget -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-single-widget mb-50">
+                        <h4>درباره ما</h4>
+                        <ul>
+                            <li><a href={% url "about" %}>درباره ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Footer Widget -->
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-single-widget mb-50">
+                        <h4>اطلاعات تماس</h4>
+                        <ul>
+                            <li><a href="#"><i class="ti-location-pin"></i>کرج , رجایی شهر , اشتراکی جنوبی , گلستان 13 , موسسه زبان شاکری</a></li>
+                            <li><a href="#"><i class="ti-pin2"></i>کرج , البرز</a></li>
+                            <li><a href="#"><i class="ti-mobile"></i> <span class="ltr-text">(026) 34344427<br>
+                                                                           (026) 34352905</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Copy Right Area -->
+
+    <!-- JS here -->
+    <script src={% static "js/vendor/modernizr-3.5.0.min.js" %}></script>
+    <script src={% static "js/vendor/jquery-1.12.4.min.js" %}></script>
+    <script src={% static "js/popper.min.js" %}></script>
+    <script src={% static "js/bootstrap.min.js" %}></script>
+    <script src={% static "js/owl.carousel.min.js" %}></script>
+    <script src={% static "js/jquery.easing.min.js" %}></script>
+    <script src={% static "js/isotope.pkgd.min.js" %}></script>
+    <script src={% static "js/waypoints.min.js" %}></script>
+    <script src={% static "js/jquery.counterup.min.js" %}></script>
+    <script src={% static "js/imagesloaded.pkgd.min.js" %}></script>
+    <script src={% static "js/jquery.scrollUp.min.js" %}></script>
+    <script src={% static "js/wow.min.js" %}></script>
+    <script src={% static "js/jquery.slicknav.min.js" %}></script>
+    <script src={% static "js/jquery.magnific-popup.min.js" %}></script>
+    <script src={% static "js/slick.min.js" %}></script>
+    <script src={% static "js/jquery.slicknav.min.js" %}></script>
+    <script src={% static "js/bundle.js" %}></script>
+
+    <!-- Custom js-->
+    <script src={% static "js/main.js" %}></script>
+
+</body>
+
+</html>
